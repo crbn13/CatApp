@@ -6,12 +6,16 @@ class Cat(val name: String, var age: Int, var weight: Int) {
         weight -= distance
     }
 
-    fun eat(): Boolean {
+    // returns the ammount of eaten food, might be less than the input ammount!!!
+    fun eat(ammount: Int = 1): Int {
+        weight += ammount
         if (weight < 20) {
-            weight++
-            return true
+            return ammount
+        } else {
+            var ret = weight - 20
+            weight = 20
+            return ret
         }
-        return false
     }
 
     override fun toString(): String {
