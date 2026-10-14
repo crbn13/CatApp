@@ -12,4 +12,9 @@ fun main() {
         clyde.eat(2)
         println(clyde)
     }
+
+    var student = Student("124", "bob", "soso", 323.0)
+    println(student)
+    println(student.getGrade())
+
 }
