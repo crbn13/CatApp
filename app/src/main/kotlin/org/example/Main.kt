@@ -14,7 +14,10 @@ fun main() {
     }
 
     var student = Student("124", "bob", "soso", 323.0)
+    println("Enter the sudent mark")
+    var mark = readln().toDouble()
     println(student)
     println(student.getGrade())
+
 
 }

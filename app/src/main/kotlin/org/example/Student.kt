@@ -10,8 +10,11 @@ class Student(val id: String, val name: String, var course: String, var mark: Do
             in 40.0..50.0 -> "Third"
             in 0.0..40.0 -> "Fail"
             else -> "🤨"
-
         }
+    }
+
+    public fun didPass(): Boolean {
+        return mark >= 40.0
     }
 
     override fun toString(): String {
