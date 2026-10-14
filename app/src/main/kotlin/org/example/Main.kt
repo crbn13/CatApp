@@ -7,4 +7,9 @@ fun main() {
     clyde.walk()
     println(binnie)
     println(clyde)
+
+    for (x in 1..100) {
+        clyde.eat()
+        println(clyde)
+    }
 }
