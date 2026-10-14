@@ -16,6 +16,4 @@ fun main() {
     var student = Student("124", "bob", "soso", 323.0)
     println(student)
 
-    println("Enter the sudent mark")
-
 }
