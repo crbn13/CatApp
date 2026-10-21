@@ -1,6 +1,8 @@
 package org.example
 
-class Student(val id: String, val name: String, var course: String, var mark: Double) {
+class Student(val id: String, val name: String, var course: String, markIn: Double) {
+
+    private var mark: Double = markIn
 
     public fun getGrade(): String {
         return when (mark) {
