@@ -1,8 +1,16 @@
 package org.example
 
 class Student(val id: String, val name: String, var course: String, markIn: Double) {
+    var mark: Double = 0.0
+        set(newMark) {
+            if (newMark in 1.0..100.0) {
+                field = newMark
+            }
+        }
 
-    private var mark: Double = markIn
+    init {
+        mark = markIn
+    }
 
     public fun getGrade(): String {
         return when (mark) {

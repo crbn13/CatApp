@@ -15,5 +15,9 @@ fun main() {
 
     var student = Student("124", "bob", "soso", 323.0)
     println(student)
+    student.mark = 23.0
+    println(student)
+    student.mark = 234723.0
+    println(student)
 
 }
