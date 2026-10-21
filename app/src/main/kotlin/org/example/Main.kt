@@ -13,7 +13,7 @@ fun main() {
         println(clyde)
     }
 
-    var student = Student("124", "bob", "soso", 323.0)
+    var student = Undergraduate("124", "bob", "soso", 323.0)
     println(student)
     student.mark = 23.0
     println(student)
